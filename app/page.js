@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Head>
         <title>ОКНАРИУМ – Окна без проблем!</title>
         <meta name="description" content="Профессиональный ремонт окон в Москве и области. Высокое качество и гарантия." />
@@ -13,28 +13,28 @@ export default function Home() {
         <meta property="og:title" content="ОКНАРИУМ – Окна без проблем!" />
         <meta property="og:description" content="Профессиональный ремонт окон в Москве и области. Высокое качество и гарантия." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://repair-windows.vercel.app/" />
+        <meta property="og:url" content="https://your-project-name.vercel.app" />
         <meta property="og:image" content="/og-image.jpg" />
       </Head>
       <Header />
-      <div className="container mx-auto px-4">
+      <main className="flex-grow container mx-auto px-4">
         <h1 className="text-3xl font-bold my-5">Добро пожаловать на ОКНАРИУМ!</h1>
         <p className="my-5">Выберите тип окон, которые вас интересуют:</p>
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
           <Link href="/plastic-windows" className="bg-blue-500 text-white px-4 py-2 rounded">
-            Пластиковые окна
+            <span className="cursor-pointer">Пластиковые окна</span>
           </Link>
           <Link href="/wooden-windows" className="bg-blue-500 text-white px-4 py-2 rounded">
-            Деревянные окна
+            <span className="cursor-pointer">Деревянные окна</span>
           </Link>
           <Link href="/aluminum-windows" className="bg-blue-500 text-white px-4 py-2 rounded">
-            Алюминиевые окна
+            <span className="cursor-pointer">Алюминиевые окна</span>
           </Link>
           <Link href="/contacts" className="bg-blue-500 text-white px-4 py-2 rounded">
-            Контакты
+            <span className="cursor-pointer">Контакты</span>
           </Link>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );
