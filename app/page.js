@@ -15,7 +15,7 @@ export default function Home() {
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold my-5">Добро пожаловать на ОКНАРИУМ!</h1>
         <p className="my-5">Выберите тип окон, которые вас интересуют:</p>
-        <div className="flex space-x-4">
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
           <Link href="/plastic-windows" className="bg-blue-500 text-white px-4 py-2 rounded">
             Пластиковые окна
           </Link>
