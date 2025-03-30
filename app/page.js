@@ -10,6 +10,11 @@ export default function Home() {
         <title>ОКНАРИУМ – Окна без проблем!</title>
         <meta name="description" content="Профессиональный ремонт окон в Москве и области. Высокое качество и гарантия." />
         <meta name="keywords" content="ремонт окон, Москва, Московская область, окна, ремонт" />
+        <meta property="og:title" content="ОКНАРИУМ – Окна без проблем!" />
+        <meta property="og:description" content="Профессиональный ремонт окон в Москве и области. Высокое качество и гарантия." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://repair-windows.vercel.app/" />
+        <meta property="og:image" content="/og-image.jpg" />
       </Head>
       <Header />
       <div className="container mx-auto px-4">

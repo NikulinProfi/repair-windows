@@ -8,6 +8,12 @@ export default function PlasticWindows() {
       <Head>
         <title>Пластиковые окна - ОКНАРИУМ</title>
         <meta name="description" content="Профессиональный ремонт пластиковых окон в Москве и области." />
+        <meta name="keywords" content="пластиковые окна, ремонт окон, Москва, Московская область" />
+        <meta property="og:title" content="Пластиковые окна - ОКНАРИУМ" />
+        <meta property="og:description" content="Профессиональный ремонт пластиковых окон в Москве и области." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://repair-windows.vercel.app/plastic-windows" />
+        <meta property="og:image" content="/og-image.jpg" />
       </Head>
       <Header />
       <div className="container mx-auto px-4">

@@ -8,6 +8,12 @@ export default function WoodenWindows() {
       <Head>
         <title>Деревянные окна - ОКНАРИУМ</title>
         <meta name="description" content="Профессиональный ремонт деревянных окон в Москве и области." />
+        <meta name="keywords" content="деревянные окна, ремонт окон, Москва, Московская область" />
+        <meta property="og:title" content="Деревянные окна - ОКНАРИУМ" />
+        <meta property="og:description" content="Профессиональный ремонт деревянных окон в Москве и области." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://repair-windows.vercel.app/wooden-windows" />
+        <meta property="og:image" content="/og-image.jpg" />
       </Head>
       <Header />
       <div className="container mx-auto px-4">

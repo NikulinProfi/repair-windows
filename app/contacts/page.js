@@ -8,6 +8,12 @@ export default function Contacts() {
       <Head>
         <title>Контакты - ОКНАРИУМ</title>
         <meta name="description" content="Контактная информация компании ОКНАРИУМ." />
+        <meta name="keywords" content="контакты, ОКНАРИУМ, Москва, Московская область" />
+        <meta property="og:title" content="Контакты - ОКНАРИУМ" />
+        <meta property="og:description" content="Контактная информация компании ОКНАРИУМ." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://repair-windows.vercel.app/contacts" />
+        <meta property="og:image" content="/og-image.jpg" />
       </Head>
       <Header />
       <div className="container mx-auto px-4">
