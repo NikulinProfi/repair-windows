@@ -1,9 +1,6 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Header from './components/Header';
-import CTA from './components/CTA';
-import Services from './components/Services';
-import About from './components/About';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -16,10 +13,22 @@ export default function Home() {
       </Head>
       <Header />
       <div className="container mx-auto px-4">
-        <CTA />
-        <Services />
-        <About />
-        <Contact />
+        <h1 className="text-3xl font-bold my-5">Добро пожаловать на ОКНАРИУМ!</h1>
+        <p className="my-5">Выберите тип окон, которые вас интересуют:</p>
+        <div className="flex space-x-4">
+          <Link href="/plastic-windows" className="bg-blue-500 text-white px-4 py-2 rounded">
+            Пластиковые окна
+          </Link>
+          <Link href="/wooden-windows" className="bg-blue-500 text-white px-4 py-2 rounded">
+            Деревянные окна
+          </Link>
+          <Link href="/aluminum-windows" className="bg-blue-500 text-white px-4 py-2 rounded">
+            Алюминиевые окна
+          </Link>
+          <Link href="/contacts" className="bg-blue-500 text-white px-4 py-2 rounded">
+            Контакты
+          </Link>
+        </div>
       </div>
       <Footer />
     </div>
