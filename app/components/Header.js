@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-5 flex flex-row justify-between items-center">
         <div className="flex items-center space-x-2">
           {/* Иконка сайта */}
-          <img src="" alt="Site Icon" className="w-12 h-12 rounded-full" />
+          <img src="images/iconO.png" alt="Site Icon" className="w-12 h-12 rounded-full" />
           <Link href="/">
             <span className="text-3xl font-bold cursor-pointer">ОКНАРИУМ</span>
           </Link>
