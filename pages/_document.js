@@ -6,12 +6,6 @@ export default function Document() {
       <Head>
         {/* Подключение шрифтов */}
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-        {/* Другие глобальные стили */}
-        <style jsx global>{`
-          body {
-            font-family: 'Inter', sans-serif;
-          }
-        `}</style>
       </Head>
       <body>
         <Main />

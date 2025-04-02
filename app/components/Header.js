@@ -14,19 +14,26 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white text-blue-900">
+    <header className="bg-white text-blue-900 font-inter">
       <div className="container mx-auto px-4 py-5 flex flex-row justify-between items-center">
         <div className="flex items-center space-x-2">
           {/* Иконка сайта */}
           <img src="images/iconO.png" alt="Site Icon" className="w-12 h-12 rounded-full" />
           <Link href="/">
-            <span className="text-xl font-bold cursor-pointer">ОКНАРИУМ</span>
+            <span className="text-3xl font-bold cursor-pointer">ОКНАРИУМ</span>
           </Link>
         </div>
         <div className="flex items-center space-x-2">
-          <button className="flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-0 transition duration-300">
-            <FaPhone className="text-lg" />
-          </button>
+          {isMobile ? (
+            <button className="flex items-center bg-green-500 text-white px-2 py-1 rounded-full hover:bg-green-600 transition duration-300">
+              <FaPhone className="text-lg" />
+            </button>
+          ) : (
+            <button className="flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition duration-300">
+              <FaPhone className="text-lg mr-2" />
+              <span>Позвонить</span>
+            </button>
+          )}
           {isMobile && (
             <button onClick={toggleMenu} className="flex items-center bg-blue-500 text-white px-2 py-1 rounded-full hover:bg-blue-600 transition duration-300">
               <FaBars className="text-lg" />
