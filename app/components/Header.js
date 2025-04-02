@@ -15,22 +15,21 @@ const Header = () => {
 
   return (
     <header className="bg-blue-600 text-white">
-      <div className="container mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center">
-        <div className="flex items-center space-x-2 mb-4 md:mb-0">
+      <div className="container mx-auto px-4 py-5 flex flex-row justify-between items-center">
+        <div className="flex items-center space-x-2">
           {/* Иконка сайта */}
-          <img src="" alt="Site Icon" className="w-8 h-8 rounded-full" />
+          <img src="" alt="Site Icon" className="w-12 h-12 rounded-full" />
           <Link href="/">
-            <span className="text-2xl font-bold cursor-pointer">ОКНАРИУМ</span>
+            <span className="text-3xl font-bold cursor-pointer">ОКНАРИУМ</span>
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
-          <button className="flex items-center space-x-1 bg-green-500 text-white px-4 py-2 rounded w-full md:w-auto">
-            <FaPhone className="text-sm" />
-            <span className="text-sm">Позвонить</span>
+        <div className="flex items-center space-x-2">
+          <button className="flex items-center bg-green-500 text-white px-4 py-2 rounded">
+            <FaPhone className="text-lg" />
           </button>
           {isMobile && (
-            <button onClick={toggleMenu} className="flex items-center space-x-1 bg-gray-500 text-white px-2 py-1 rounded">
-              <FaBars className="text-sm" />
+            <button onClick={toggleMenu} className="flex items-center bg-gray-500 text-white px-2 py-1 rounded">
+              <FaBars className="text-lg" />
             </button>
           )}
         </div>
