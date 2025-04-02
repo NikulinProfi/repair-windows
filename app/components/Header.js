@@ -14,17 +14,17 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white text-blue-900 font-inter">
+    <header className="bg-white text-blue-900">
       <div className="container mx-auto px-4 py-5 flex flex-row justify-between items-center">
         <div className="flex items-center space-x-2">
           {/* Иконка сайта */}
-          <img src="" alt="Site Icon" className="w-12 h-12 rounded-full" />
+          <img src="images/icono.png" alt="Site Icon" className="w-12 h-12 rounded-full" />
           <Link href="/">
-            <span className="text-3xl font-bold cursor-pointer">ОКНАРИУМ</span>
+            <span className="text-xl font-bold cursor-pointer">ОКНАРИУМ</span>
           </Link>
         </div>
         <div className="flex items-center space-x-2">
-          <button className="flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition duration-300">
+          <button className="flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-0 transition duration-300">
             <FaPhone className="text-lg" />
           </button>
           {isMobile && (
