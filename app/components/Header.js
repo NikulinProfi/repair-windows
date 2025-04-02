@@ -23,15 +23,15 @@ const Header = () => {
             <span className="text-2xl font-bold cursor-pointer">ОКНАРИУМ</span>
           </Link>
         </div>
-        <div className="flex items-center space-x-4">
-          <button className="flex items-center space-x-2 bg-green-500 text-white px-4 py-2 rounded">
-            <FaPhone />
-            <span>Позвонить</span>
+        <div className="flex items-center space-x-2">
+          <button className="flex items-center space-x-1 bg-green-500 text-white px-2 py-1 rounded">
+            <FaPhone className="text-sm" />
+            <span className="text-sm">Позвонить</span>
           </button>
           {isMobile && (
-            <button onClick={toggleMenu} className="flex items-center space-x-2 bg-gray-500 text-white px-4 py-2 rounded">
-              <FaBars />
-              <span>Меню</span>
+            <button onClick={toggleMenu} className="flex items-center space-x-1 bg-gray-500 text-white px-2 py-1 rounded">
+              <FaBars className="text-sm" />
+              <span className="text-sm">Меню</span>
             </button>
           )}
         </div>
