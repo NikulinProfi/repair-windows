@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { FaPhone, FaBars } from 'react-icons/fa';
+import { FaPhone, FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white text-blue-900 font-inter">
+    <header className="bg-white text-blue-900 font-inter w-full m-0 p-0">
       <div className="container mx-auto px-4 py-5 flex flex-row justify-between items-center">
         <div className="flex items-center space-x-2">
           {/* Иконка сайта */}
@@ -42,33 +42,38 @@ const Header = () => {
         </div>
       </div>
       {isMobile && isMenuOpen && (
-        <nav className="bg-blue-500">
-          <ul className="flex flex-col items-center space-y-2 py-4">
+        <nav className="bg-blue-500 w-full fixed top-0 left-0 z-50 h-full">
+          <div className="flex justify-end p-4">
+            <button onClick={toggleMenu} className="flex items-center bg-red-500 text-white px-2 py-1 rounded-full hover:bg-red-600 transition duration-300">
+              <FaTimes className="text-lg" />
+            </button>
+          </div>
+          <ul className="flex flex-col items-center space-y-4 py-4">
             <li>
               <Link href="/plastic-windows">
-                <span className="hover:underline cursor-pointer text-white">Пластиковые окна</span>
+                <span className="text-xl font-semibold hover:underline cursor-pointer text-white">Пластиковые окна</span>
               </Link>
             </li>
             <li>
               <Link href="/wooden-windows">
-                <span className="hover:underline cursor-pointer text-white">Деревянные окна</span>
+                <span className="text-xl font-semibold hover:underline cursor-pointer text-white">Деревянные окна</span>
               </Link>
             </li>
             <li>
               <Link href="/aluminum-windows">
-                <span className="hover:underline cursor-pointer text-white">Алюминиевые окна</span>
+                <span className="text-xl font-semibold hover:underline cursor-pointer text-white">Алюминиевые окна</span>
               </Link>
             </li>
             <li>
               <Link href="/contacts">
-                <span className="hover:underline cursor-pointer text-white">Контакты</span>
+                <span className="text-xl font-semibold hover:underline cursor-pointer text-white">Контакты</span>
               </Link>
             </li>
           </ul>
         </nav>
       )}
       {!isMobile && (
-        <nav className="bg-blue-500">
+        <nav className="bg-blue-500 w-full">
           <ul className="flex justify-center space-x-4 py-4">
             <li>
               <Link href="/plastic-windows">

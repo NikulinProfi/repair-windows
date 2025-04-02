@@ -20,9 +20,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow container mx-auto px-4">
         <section className="text-center my-10">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-8">
-          Ремонт окон в Москве и МО – быстро, качественно, с гарантией!
-        </h1>
+          <h1 className="text-4xl font-bold mb-5">Ремонт окон в Москве и МО – быстро, качественно, с гарантией!</h1>
           {/* Заглушка для формы */}
           <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
             <p>Форма временно недоступна. Пожалуйста, попробуйте позже.</p>
