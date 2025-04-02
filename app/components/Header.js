@@ -20,7 +20,7 @@ const Header = () => {
           {/* Иконка сайта */}
           <img src="images/iconO.png" alt="Site Icon" className="w-12 h-12 rounded-full" />
           <Link href="/">
-            <span className="text-3xl font-bold cursor-pointer">ОКНАРИУМ</span>
+            <span className="text-xl font-bold cursor-pointer">ОКНАРИУМ</span>
           </Link>
         </div>
         <div className="flex items-center space-x-2">
