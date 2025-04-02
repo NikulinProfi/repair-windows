@@ -14,21 +14,21 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-blue-600 text-white">
+    <header className="bg-white text-blue-900 font-inter">
       <div className="container mx-auto px-4 py-5 flex flex-row justify-between items-center">
         <div className="flex items-center space-x-2">
           {/* Иконка сайта */}
-          <img src="images/iconO.png" alt="Site Icon" className="w-12 h-12 rounded-full" />
+          <img src="" alt="Site Icon" className="w-12 h-12 rounded-full" />
           <Link href="/">
-            <span className="text-xl font-bold cursor-pointer">ОКНАРИУМ</span>
+            <span className="text-3xl font-bold cursor-pointer">ОКНАРИУМ</span>
           </Link>
         </div>
         <div className="flex items-center space-x-2">
-          <button className="flex items-center bg-green-500 text-white px-4 py-2 rounded">
+          <button className="flex items-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition duration-300">
             <FaPhone className="text-lg" />
           </button>
           {isMobile && (
-            <button onClick={toggleMenu} className="flex items-center bg-gray-500 text-white px-2 py-1 rounded">
+            <button onClick={toggleMenu} className="flex items-center bg-blue-500 text-white px-2 py-1 rounded-full hover:bg-blue-600 transition duration-300">
               <FaBars className="text-lg" />
             </button>
           )}
@@ -39,22 +39,22 @@ const Header = () => {
           <ul className="flex flex-col items-center space-y-2 py-4">
             <li>
               <Link href="/plastic-windows">
-                <span className="hover:underline cursor-pointer">Пластиковые окна</span>
+                <span className="hover:underline cursor-pointer text-white">Пластиковые окна</span>
               </Link>
             </li>
             <li>
               <Link href="/wooden-windows">
-                <span className="hover:underline cursor-pointer">Деревянные окна</span>
+                <span className="hover:underline cursor-pointer text-white">Деревянные окна</span>
               </Link>
             </li>
             <li>
               <Link href="/aluminum-windows">
-                <span className="hover:underline cursor-pointer">Алюминиевые окна</span>
+                <span className="hover:underline cursor-pointer text-white">Алюминиевые окна</span>
               </Link>
             </li>
             <li>
               <Link href="/contacts">
-                <span className="hover:underline cursor-pointer">Контакты</span>
+                <span className="hover:underline cursor-pointer text-white">Контакты</span>
               </Link>
             </li>
           </ul>
@@ -65,22 +65,22 @@ const Header = () => {
           <ul className="flex justify-center space-x-4 py-4">
             <li>
               <Link href="/plastic-windows">
-                <span className="hover:underline cursor-pointer">Пластиковые окна</span>
+                <span className="hover:underline cursor-pointer text-white">Пластиковые окна</span>
               </Link>
             </li>
             <li>
               <Link href="/wooden-windows">
-                <span className="hover:underline cursor-pointer">Деревянные окна</span>
+                <span className="hover:underline cursor-pointer text-white">Деревянные окна</span>
               </Link>
             </li>
             <li>
               <Link href="/aluminum-windows">
-                <span className="hover:underline cursor-pointer">Алюминиевые окна</span>
+                <span className="hover:underline cursor-pointer text-white">Алюминиевые окна</span>
               </Link>
             </li>
             <li>
               <Link href="/contacts">
-                <span className="hover:underline cursor-pointer">Контакты</span>
+                <span className="hover:underline cursor-pointer text-white">Контакты</span>
               </Link>
             </li>
           </ul>
